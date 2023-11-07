@@ -10,5 +10,7 @@ https://github.com/Coda-Coda/argos
 
 3. Adjust the scripts
 
-4. Move them to `~/.config/argos`
+4. Make them executable
+
+5. Move them to `~/.config/argos`
 
