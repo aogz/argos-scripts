@@ -14,14 +14,14 @@ repositories=(
     # "surfly/ci"
 )
 
-# Initialize the total number of pull requests to 0
+# Initialize the total number of vulnerabilities to 0
 total_vulnerabilities=0
 
 # Loop through the repositories and add up the number of pending vulnerabilities
 for repository in "${repositories[@]}"; do
     url="https://api.github.com/repos/$repository/dependabot/alerts?severity=critical&state=open"
     vulnerabilities=$(curl -s -H "Authorization: token $access_token" "$url" | jq -r ". | length")
-    total_vulnerabilities=$((total_pull_requests + vulnerabilities))
+    total_vulnerabilities=$((total_vulnerabilities + vulnerabilities))
 done
 
 # Print the total number of pull requests
