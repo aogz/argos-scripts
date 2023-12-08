@@ -2,15 +2,15 @@
 
 ## Usage
 
-1. Install the extension:
+1. Install the extension (https://itsfoss.com/gnome-shell-extensions/):
 
-https://github.com/Coda-Coda/argos
+https://github.com/p-e-w/argos
 
 2. Read the docs
 
 3. Adjust the scripts
 
-4. Make them executable
+5. Make them executable
 
-5. Move them to `~/.config/argos`
+6. Move them to `~/.config/argos`
 
